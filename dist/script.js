@@ -5,7 +5,7 @@ document.querySelector('#year').textContent=new Date().getFullYear();
 const gallery=document.querySelector('.gallery-track'),gallerySlides=[...gallery.querySelectorAll('figure')],galleryCurrent=document.querySelector('#gallery-current');
 const galleryStep=()=>gallerySlides[0].getBoundingClientRect().width+16;
 let galleryPaused=false,galleryAuto;
-const moveGallery=direction=>{const current=Math.round(gallery.scrollLeft/galleryStep()),next=direction>0?(current+1)%gallerySlides.length:(current-1+gallerySlides.length)%gallerySlides.length;gallery.scrollTo({left:next*galleryStep(),behavior:'smooth'})};
+const moveGallery=direction=>{const current=Math.round(gallery.scrollLeft/galleryStep()),visible=window.innerWidth<=900?1:2,max=Math.max(0,gallerySlides.length-visible),next=direction>0?(current>=max?0:current+1):(current<=0?max:current-1);gallery.scrollTo({left:next*galleryStep(),behavior:'smooth'})};
 const restartGallery=()=>{clearInterval(galleryAuto);if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)galleryAuto=setInterval(()=>{if(!galleryPaused&&!document.hidden)moveGallery(1)},6000)};
 document.querySelector('[data-gallery-prev]').addEventListener('click',()=>{moveGallery(-1);restartGallery()});
 document.querySelector('[data-gallery-next]').addEventListener('click',()=>{moveGallery(1);restartGallery()});
@@ -18,3 +18,4 @@ const moveServices=direction=>{const current=Math.round(serviceTrack.scrollLeft/
 const restartServices=()=>{clearInterval(serviceAuto);if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)serviceAuto=setInterval(()=>{if(!servicePaused&&!document.hidden)moveServices(1)},6500)};
 document.querySelector('[data-service-prev]').addEventListener('click',()=>{moveServices(-1);restartServices()});document.querySelector('[data-service-next]').addEventListener('click',()=>{moveServices(1);restartServices()});
 serviceTrack.addEventListener('scroll',()=>{const active=Math.max(0,Math.min(serviceSlides.length-1,Math.round(serviceTrack.scrollLeft/serviceStep())));serviceCurrent.textContent=String(active+1).padStart(2,'0')},{passive:true});serviceTrack.addEventListener('mouseenter',()=>servicePaused=true);serviceTrack.addEventListener('mouseleave',()=>servicePaused=false);serviceTrack.addEventListener('focusin',()=>servicePaused=true);serviceTrack.addEventListener('focusout',()=>servicePaused=false);restartServices();
+const backToTop=document.querySelector('.back-to-top');const toggleBackToTop=()=>backToTop.classList.toggle('show',window.scrollY>700);window.addEventListener('scroll',toggleBackToTop,{passive:true});toggleBackToTop();backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
