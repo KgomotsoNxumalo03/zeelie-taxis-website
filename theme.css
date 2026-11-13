@@ -57,3 +57,19 @@ footer{background:#1f1b18}.footer-brand{width:138px!important;height:138px;paddi
 .photo-credit-footer{color:#b9afa5}
 @media(max-width:900px){.site-header nav{background:var(--brand-wine)}.site-header .brand{width:64px;flex-basis:64px;height:64px}.site-header .brand-logo{width:58px;height:58px;max-height:58px}.social-links{width:100%;flex-wrap:wrap}.social-links a{flex:1}.footer-brand{width:126px!important;height:126px}}
 @media(max-width:560px){.site-header .brand{width:58px;flex-basis:58px;height:58px}.site-header .brand-logo{width:52px;height:52px}.menu{background:rgba(91,23,27,.88);border-color:#f5f1e866}.social-links{flex-direction:column}.social-links a{width:100%}}
+
+/* Full-site brand and contrast audit */
+:root{--mint:var(--brand-burgundy);--green:var(--brand-charcoal);--cream:var(--brand-ivory);--sand:var(--brand-ivory-deep)}
+.site-header nav a:hover{color:#f1d6d0}
+.fleet-guide h2 em,.faq h2 em,.gallery-head h2 em,.intro h2 em,.explore h2 em,.reviews h2 em{color:var(--brand-wine)}
+.gallery-controls>span b,.service-carousel-controls>span b,.faq summary span,.about-number,.stars{color:var(--brand-wine)}
+.gallery-track figcaption span,.service.scenic-card>span,.destination-grid b,.news-grid time,.trust-strip b{color:#f0c6bf}
+.news-head>a,.review-source{border-color:#c99089}
+.reply-note{border-left-color:#c99089}
+.trust-strip article{border-top-color:#c99089}
+.dots button.active{background:var(--brand-wine)}
+.fleet-image .badge,.primary,.header-cta{background:var(--brand-burgundy)}
+.route-strip span,.route-strip i{color:#f0c6bf}
+:where(a,button,input,select,textarea,summary):focus-visible{outline-color:#b97b76}
+.whatsapp{background:#25d366;color:#fff}
+@media(max-width:900px){.site-header nav a:hover{color:#fff}}
