@@ -73,3 +73,20 @@ footer{background:#1f1b18}.footer-brand{width:138px!important;height:138px;paddi
 :where(a,button,input,select,textarea,summary):focus-visible{outline-color:#b97b76}
 .whatsapp{background:#25d366;color:#fff}
 @media(max-width:900px){.site-header nav a:hover{color:#fff}}
+
+/* Compact type legibility audit */
+.eyebrow,.kicker{font-size:10px!important;line-height:1.5}
+.hero-card span,.fleet li span,.places span,.fleet-row.head,.destination-grid b,.news-grid time,.news-grid span,.trust-strip b,.gallery-track figcaption span,.route-strip span{font-size:10px}
+.gallery-track figcaption small,.service-photo-credits,.review-source,.social-cta small,.form-note{font-size:10px;line-height:1.55}
+.field label,.contact-lines small{font-size:10px;line-height:1.45}
+.contact-lines small{color:#f0c6bf;letter-spacing:.16em}
+.booking-copy>p:not(.kicker),.fleet-copy>p:not(.kicker),.about-copy>p:not(.kicker){color:#ded6cd}
+.destination-grid p,.news-grid p,.trust-strip p,.reply-note{color:#d4ccc3!important}
+.fleet-row.head,.form-note{color:#5f5a54}
+.service-photo-credits{color:#5f5a54}
+.social-cta small{color:#575b4b!important}
+.quote p span{color:#5f665f}
+footer>p,footer>small,.photo-credit-footer{color:#c9c0b6;opacity:1}
+.back-to-top small{font-size:9px}
+.gallery-track:after,.service-track:after{font-size:9px}
+@media(max-width:560px){.eyebrow,.kicker{font-size:10px!important}.hero-card span{font-size:9px}.field label,.contact-lines small{font-size:10px}}
