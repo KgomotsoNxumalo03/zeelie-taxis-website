@@ -24,3 +24,36 @@
 .trust-strip{padding:0 8vw 100px;background:#111113;color:#fff;display:grid;grid-template-columns:repeat(3,1fr);gap:1px}.trust-strip article{padding:38px;background:#1b1b1e;border-top:2px solid #d7192d}.trust-strip b{font-size:9px;letter-spacing:.15em;color:#ff4053}.trust-strip h3{font:700 25px Playfair Display;margin:28px 0 12px}.trust-strip p{font-size:12px;line-height:1.75;color:#bdb8b7;margin:0}.review-source{display:inline-block;margin:28px 0 0 8vw;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid #d7192d;padding-bottom:7px}.reply-note{font-size:11px!important;line-height:1.7!important;color:#aaa5a5!important;border-left:2px solid #e11b2f;padding-left:14px;margin-top:28px!important}.booking-review{grid-column:1/-1;margin-top:12px;padding:28px;background:#1a1a1d;border-top:2px solid #25d366}.booking-review h3{font:700 26px Playfair Display;margin:0 0 16px}.booking-review pre{white-space:pre-wrap;font:500 12px/1.7 Manrope;color:#d4cfcd;margin:0 0 22px}.booking-review>div{display:flex;gap:10px;flex-wrap:wrap}.booking-review .btn{position:static;min-width:180px;justify-content:center}.photo-credit-footer{display:block;opacity:.55;margin-top:14px;font-size:8px!important;letter-spacing:.06em}.service-carousel-controls button[aria-pressed=true],.gallery-controls button[aria-pressed=true]{background:#111;color:#fff}.gallery-controls button,.service-carousel-controls button{min-width:44px;min-height:44px}.gallery-track:after,.service-track:after{content:"Swipe to explore";position:sticky;right:16px;align-self:flex-end;margin:0 0 16px -130px;padding:8px 10px;background:#111c;color:#fff;font-size:8px;letter-spacing:.12em;text-transform:uppercase;pointer-events:none;opacity:0}
 @media(max-width:900px){.trust-strip{grid-template-columns:1fr;padding:0 6vw 80px}.gallery-track:after,.service-track:after{opacity:1}.service-photo-credits{display:none}}
 @media(max-width:560px){.menu{width:44px;height:44px;background:rgba(0,0,0,.62);border:1px solid #ffffff55;border-radius:2px}.menu span{width:20px;height:2px;background:#fff;left:11px}.hero{min-height:820px}.hero-card{font-size:11px}.hero-card span{font-size:8px}.kicker,.eyebrow{font-size:9px!important}.service-carousel-controls,.gallery-controls{gap:6px}.booking-review{padding:22px}.booking-review .btn{width:100%}}
+
+/* Official Zeelie Shuttles & Tours brand system */
+:root{--brand-wine:#5b171b;--brand-burgundy:#741f25;--brand-ivory:#f5f1e8;--brand-ivory-deep:#e8e0d1;--brand-olive:#6c705c;--brand-sage:#929584;--brand-charcoal:#25221f;--brand-ink:#2b2420}
+body{background:var(--brand-ivory);color:var(--brand-ink)}
+.site-header{background:linear-gradient(180deg,rgba(37,34,31,.82),rgba(37,34,31,.08));border-color:#f5f1e83d}
+.site-header .brand{width:76px;flex:0 0 76px;height:76px;padding:4px;background:rgba(245,241,232,.94);border:1px solid rgba(116,31,37,.25);border-radius:50%;justify-content:center}
+.site-header .brand-logo{width:68px;height:68px;max-height:68px;object-fit:contain;filter:none}
+.header-cta,.primary{background:var(--brand-burgundy);border-color:var(--brand-burgundy);color:#fff}
+.header-cta:hover,.primary:hover{background:var(--brand-wine)}
+.hero-shade{background:linear-gradient(90deg,rgba(37,30,27,.9) 0%,rgba(55,39,33,.62) 48%,rgba(40,37,31,.14) 82%),linear-gradient(0deg,rgba(37,28,25,.52),transparent 48%)}
+.eyebrow span{background:var(--brand-burgundy)}
+.hero h1 em,.intro h2 em,.fleet h2 em,.explore h2 em,.about h2 em,.reviews h2 em,.booking h2 em,.faq h2 em,.news-head h2 em{color:var(--brand-burgundy)}
+.gallery-head h2 em,.gallery-controls>span b,.service-carousel-controls>span b{color:var(--brand-burgundy)}
+.hero h1 em,.fleet h2 em,.about h2 em,.booking h2 em,.news-head h2 em{color:#c88b85}
+.hero-card{background:rgba(66,25,27,.94);border-color:#b77a74}
+.kicker,.fleet li span,.contact-lines small,.destination-grid b,.news-grid time,.service.scenic-card>span{color:var(--brand-burgundy)}
+.kicker.light{color:#d8aaa5}
+.service.sand,.journey-gallery,.fleet-guide,.faq{background:var(--brand-ivory)}
+.service.dark,.fleet,.about,.booking,.news,.destinations{background:var(--brand-charcoal)}
+.trust-strip{background:var(--brand-charcoal)}.trust-strip article{background:#312c28;border-top-color:var(--brand-burgundy)}.trust-strip b{color:#d69b95}
+.route-strip{background:var(--brand-wine)}.route-strip span,.route-strip i{color:#e1b6ae}
+.destination-grid h3,.news-grid h3{color:#fff}.destination-grid p,.news-grid p{color:#c9c0b6}
+.fleet-image .badge{background:var(--brand-burgundy);color:#fff}
+.about-number,.stars,.dots button.active{color:var(--brand-burgundy)}.dots button.active{background:var(--brand-burgundy)}
+.service.scenic-card:before{background:linear-gradient(180deg,rgba(45,33,27,.05),rgba(45,33,27,.3) 42%,rgba(45,26,25,.8) 100%)}
+.gallery-controls button:hover,.service-carousel-controls button:hover,.gallery-controls button[aria-pressed=true],.service-carousel-controls button[aria-pressed=true]{background:var(--brand-wine);border-color:var(--brand-wine)}
+.back-to-top:hover{background:var(--brand-wine)}
+:where(a,button,input,select,textarea,summary):focus-visible{outline-color:#a46262}
+.social-cta{background:var(--brand-ivory);border-color:#d9cfbf}.social-cta>div:first-child{display:block}.social-cta p small{color:var(--brand-olive)}.social-links{display:flex!important;gap:10px!important}.social-links a{background:var(--brand-burgundy);color:#fff;padding:16px 20px;font-size:11px;font-weight:700;min-width:150px;display:flex;justify-content:space-between}.social-links a:last-child{background:var(--brand-olive)}
+footer{background:#1f1b18}.footer-brand{width:138px!important;height:138px;padding:6px;background:var(--brand-ivory);border-radius:50%;justify-content:center}.footer-brand .brand-logo{width:126px!important;height:126px!important;max-height:126px!important;object-fit:contain}
+.photo-credit-footer{color:#b9afa5}
+@media(max-width:900px){.site-header nav{background:var(--brand-wine)}.site-header .brand{width:64px;flex-basis:64px;height:64px}.site-header .brand-logo{width:58px;height:58px;max-height:58px}.social-links{width:100%;flex-wrap:wrap}.social-links a{flex:1}.footer-brand{width:126px!important;height:126px}}
+@media(max-width:560px){.site-header .brand{width:58px;flex-basis:58px;height:58px}.site-header .brand-logo{width:52px;height:52px}.menu{background:rgba(91,23,27,.88);border-color:#f5f1e866}.social-links{flex-direction:column}.social-links a{width:100%}}
