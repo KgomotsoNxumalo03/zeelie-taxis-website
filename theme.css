@@ -62,7 +62,10 @@ footer{background:#1f1b18}.footer-brand{width:138px!important;height:138px;paddi
 :root{--mint:var(--brand-burgundy);--green:var(--brand-charcoal);--cream:var(--brand-ivory);--sand:var(--brand-ivory-deep)}
 .site-header nav a:hover{color:#f1d6d0}
 .fleet-guide h2 em,.faq h2 em,.gallery-head h2 em,.intro h2 em,.explore h2 em,.reviews h2 em{color:var(--brand-wine)}
-.gallery-controls>span b,.service-carousel-controls>span b,.faq summary span,.about-number,.stars{color:var(--brand-wine)}
+.gallery-controls>span b,.service-carousel-controls>span b,.faq summary span,.stars{color:var(--brand-wine)}
+.about-number{color:var(--brand-ivory);line-height:1}
+.about-number small{color:inherit;margin-top:24px}
+.fleet li span,.fleet li b{color:#fff}
 .gallery-track figcaption span,.service.scenic-card>span,.destination-grid b,.news-grid time,.trust-strip b{color:#f0c6bf}
 .news-head>a,.review-source{border-color:#c99089}
 .reply-note{border-left-color:#c99089}
@@ -90,3 +93,16 @@ footer>p,footer>small,.photo-credit-footer{color:#c9c0b6;opacity:1}
 .back-to-top small{font-size:9px}
 .gallery-track:after,.service-track:after{font-size:9px}
 @media(max-width:560px){.eyebrow,.kicker{font-size:10px!important}.hero-card span{font-size:9px}.field label,.contact-lines small{font-size:10px}}
+
+/* Vertical spacing between homepage sections */
+:root{--section-space:clamp(36px,4.5vw,64px);--paired-section-space:clamp(20px,2.5vw,36px)}
+.intro,.explore-head{padding-block:var(--section-space) var(--paired-section-space)}
+.services{margin-bottom:var(--section-space)}
+.journey-gallery,.fleet-copy,.fleet-guide,.destinations,.about,.reviews,.news,.faq,.booking{padding-block:var(--section-space)}
+.explore,.trust-strip{padding-bottom:var(--section-space)}
+.destinations:has(+ .about){padding-bottom:var(--paired-section-space)}
+.destinations + .about{padding-top:var(--paired-section-space)}
+.social-cta,footer{padding-block:var(--paired-section-space)}
+.fleet-guide{padding-bottom:clamp(8px,1vw,16px)}
+.fleet-table>p{margin-bottom:0}
+.fleet-guide + .explore .explore-head{padding-top:clamp(12px,1.5vw,24px)}
