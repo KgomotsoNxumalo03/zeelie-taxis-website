@@ -145,3 +145,11 @@ footer>p,footer>small,.photo-credit-footer{color:#c9c0b6;opacity:1}
 .hero-card .hero-hours small{font-size:8px;line-height:1.45;letter-spacing:.05em;color:#f2d8d3;margin-top:7px;text-transform:none}
 @media(max-width:900px){.site-header{height:86px}.site-header nav{top:86px;max-height:calc(100vh - 86px)}.site-header .brand{width:78px;flex-basis:78px;height:78px}.site-header .brand-logo{width:70px;height:70px;max-height:70px}}
 @media(max-width:560px){.site-header{height:80px}.site-header nav{top:80px;max-height:calc(100vh - 80px)}.site-header .brand{width:72px;flex-basis:72px;height:72px}.site-header .brand-logo{width:64px;height:64px;max-height:64px}.hero-card .hero-hours{max-width:150px}.hero-card .hero-hours small{font-size:7px}}
+
+/* Header wordmark */
+.site-header{gap:16px}
+.header-wordmark{display:flex;flex-direction:column;justify-content:center;line-height:1;color:var(--brand-ivory);text-shadow:0 2px 8px rgba(0,0,0,.38);white-space:nowrap}
+.header-wordmark strong{font:500 28px/1 "Playfair Display",serif;letter-spacing:.22em}
+.header-wordmark span{margin-top:7px;font:500 9px/1 Manrope,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#f1d6d0}
+@media(max-width:900px){.header-wordmark strong{font-size:22px}.header-wordmark span{font-size:7px;letter-spacing:.22em}.site-header{gap:12px}}
+@media(max-width:560px){.header-wordmark strong{font-size:18px;letter-spacing:.16em}.header-wordmark span{margin-top:5px;font-size:6px;letter-spacing:.16em}}
