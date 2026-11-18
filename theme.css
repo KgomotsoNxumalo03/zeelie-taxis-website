@@ -136,3 +136,12 @@ footer>p,footer>small,.photo-credit-footer{color:#c9c0b6;opacity:1}
 @media(max-width:900px){.social-stories{padding-inline:6vw}.social-stories-head{grid-template-columns:1fr;gap:18px}.social-story-links{flex-wrap:wrap}.social-story-links span{width:100%;margin:0 0 4px}.instagram-embeds iframe{height:650px}}
 @media(max-width:700px){.instagram-embeds{grid-template-columns:1fr}.instagram-embeds iframe{height:690px}.social-embed-panel{padding:14px}.social-embed-title{align-items:flex-start}.social-story-links a{flex:1;text-align:center}}
 @media(max-width:430px){.instagram-embeds iframe{height:620px}.facebook-embed-wrap,.facebook-embed-wrap iframe{min-height:560px;height:560px}.social-embed-title{display:block}.social-embed-title>a{display:inline-block;margin-top:14px}}
+
+/* Client details update */
+.site-header{height:100px}
+.site-header .brand{width:92px;flex-basis:92px;height:92px;padding:4px}
+.site-header .brand-logo{width:84px;height:84px;max-height:84px}
+.hero-card .hero-hours{max-width:205px}
+.hero-card .hero-hours small{font-size:8px;line-height:1.45;letter-spacing:.05em;color:#f2d8d3;margin-top:7px;text-transform:none}
+@media(max-width:900px){.site-header{height:86px}.site-header nav{top:86px;max-height:calc(100vh - 86px)}.site-header .brand{width:78px;flex-basis:78px;height:78px}.site-header .brand-logo{width:70px;height:70px;max-height:70px}}
+@media(max-width:560px){.site-header{height:80px}.site-header nav{top:80px;max-height:calc(100vh - 80px)}.site-header .brand{width:72px;flex-basis:72px;height:72px}.site-header .brand-logo{width:64px;height:64px;max-height:64px}.hero-card .hero-hours{max-width:150px}.hero-card .hero-hours small{font-size:7px}}
